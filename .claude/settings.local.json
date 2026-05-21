@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell($f = Get-Item \"D:\\\\First_CC\\\\特征选择与特征提取-教案.docx\"; Write-Output \"Size: $\\($f.Length\\) bytes\"; Write-Output \"LastModified: $\\($f.LastWriteTime\\)\")",
+      "PowerShell(python D:\\\\First_CC\\\\verify_output.py)",
+      "PowerShell(Out-Null *)",
+      "WebSearch",
+      "PowerShell(PowerShell -ExecutionPolicy Bypass -File \"D:\\\\First_CC\\\\populate_books.ps1\")",
+      "PowerShell(python \"D:\\\\First_CC\\\\verify_books.py\")",
+      "PowerShell(python \"D:\\\\First_CC\\\\verify_chinese.py\")",
+      "PowerShell(python -c \"import docx; print\\('python-docx available'\\)\" 2>&1)",
+      "PowerShell(python -c \"from docx import Document; from docx.shared import Inches, Pt, Cm, RGBColor; from docx.enum.text import WD_ALIGN_PARAGRAPH; from docx.enum.style import WD_STYLE_TYPE; print\\('All docx imports OK'\\)\")",
+      "PowerShell(python -c \"from PIL import Image; print\\('Pillow OK:', Image.__version__\\)\")",
+      "PowerShell(python -c \"import requests; print\\('requests OK'\\)\")",
+      "PowerShell(winget install *)"
+    ]
+  }
+}
